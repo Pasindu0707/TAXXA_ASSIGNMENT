@@ -2,8 +2,14 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
-    "./*": "./src/*.tsx"
+    ".": "./src/index.ts",
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./input": "./src/input.tsx",
+    "./checkbox": "./src/checkbox.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
